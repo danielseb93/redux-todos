@@ -1,0 +1,20 @@
+<!--La clase completed llama isComplete, esta clase en true muestra el ToDo tachado-->
+<!--La clase editing llama isEdit, esta clase en true permite editar el texto del ToDo-->
+<li [class.completed] = "todo?.isComplete"
+    [class.editing] = "isEdit"> 
+  <div class="view">
+    <input  class="toggle"
+            [formControl]="check"
+            type="checkbox">
+    <label (dblclick)="editar()">{{ todo?.text }}</label>
+    <button class="destroy"
+            (click)="borrar()"></button>
+  </div>
+  <!--# es una referencia local para poder seleccionar el texto cuando se hace doble click-->
+  <!--blur se dispara cuando se pierde el foco del elemento seleccionado-->
+  <input  class="edit"
+          type="text"
+          [formControl]="txtInput"
+          (blur)="terminarEdicion()"
+          #inputFisico>
+</li>
