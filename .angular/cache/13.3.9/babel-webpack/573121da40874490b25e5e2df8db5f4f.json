@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { createAction, props } from '@ngrx/store';\nexport const setFiltro = createAction('[Filtro] Set Filtro', props() //Mediante este argumento defino si el filtro es todos, activas o completadas.\n);","map":null,"metadata":{},"sourceType":"module"}
