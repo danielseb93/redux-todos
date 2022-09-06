@@ -4,8 +4,8 @@ import { Todo } from './models/todo.model';
 
 //Iniciador de estado
 export const initialState: Todo[] = [
-  new Todo('Salvar el mundo'),
-  new Todo('Comprar guitarra'),
+  new Todo('Sergio,, lavar la losa'),
+  new Todo('CSergio, sacar la basura'),
   new Todo('Revisión App')
 ];
 
